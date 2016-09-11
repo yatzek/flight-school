@@ -20,7 +20,7 @@ jobs:
   - get: flight-school
     trigger: true
   - task: tests
-    file: flight-school/build.yml
+    file: flight-school/ci/build.yml
   - put: staging-app
     params:
       manifest: flight-school/manifest.yml
